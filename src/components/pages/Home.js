@@ -20,36 +20,13 @@ const Home = () => {
               <Link to="/register" className="btn btn-primary btn-large">
                 Get Started
               </Link>
-              <Link to="/login" className="btn btn-outline btn-large">
+              <Link to="/login" className="btn btn-primary btn-large">
                 Login
               </Link>
             </div>
           )}
         </div>
       </section>
-
-      {/* <section className="stats-section">
-        <div className="container">
-          <div className="stats-grid">
-            <div className="stat-card">
-              <div className="stat-number">500+</div>
-              <div className="stat-label">Medical Shops</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-number">200+</div>
-              <div className="stat-label">Hospitals</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-number">10,000+</div>
-              <div className="stat-label">Medicines Listed</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-number">50,000+</div>
-              <div className="stat-label">Happy Users</div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <section className="features">
         <div className="container">
@@ -164,10 +141,6 @@ const Home = () => {
                   <span className="check-icon">✓</span>
                   24/7 AI-powered health assistance
                 </li>
-                <li>
-                  <span className="check-icon">✓</span>
-                  User reviews and ratings system
-                </li>
               </ul>
               {!isAuthenticated && (
                 <Link to="/register" className="btn btn-primary btn-large">
@@ -185,58 +158,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <section className="testimonials">
-        <div className="container">
-          <h2 className="section-title">What Our Users Say</h2>
-          <div className="testimonials-grid">
-            <div className="testimonial-card">
-              <div className="testimonial-rating">⭐⭐⭐⭐⭐</div>
-              <p className="testimonial-text">
-                "WellnessWay helped me find the medicine I needed at 2 AM. The platform is 
-                incredibly user-friendly and accurate!"
-              </p>
-              <div className="testimonial-author">
-                <div className="author-avatar">R</div>
-                <div className="author-info">
-                  <div className="author-name">Rajesh Kumar</div>
-                  <div className="author-location">Mumbai, Maharashtra</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="testimonial-card">
-              <div className="testimonial-rating">⭐⭐⭐⭐⭐</div>
-              <p className="testimonial-text">
-                "The AI chatbot provided helpful preliminary guidance before my doctor's appointment. 
-                Very impressed with the service!"
-              </p>
-              <div className="testimonial-author">
-                <div className="author-avatar">P</div>
-                <div className="author-info">
-                  <div className="author-name">Priya Sharma</div>
-                  <div className="author-location">Delhi, NCR</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="testimonial-card">
-              <div className="testimonial-rating">⭐⭐⭐⭐⭐</div>
-              <p className="testimonial-text">
-                "As a medical shop owner, this platform has increased my visibility and helped 
-                me serve more customers efficiently."
-              </p>
-              <div className="testimonial-author">
-                <div className="author-avatar">A</div>
-                <div className="author-info">
-                  <div className="author-name">Amit Patel</div>
-                  <div className="author-location">Ahmedabad, Gujarat</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       <section className="cta-section">
         <div className="container">
           <div className="cta-content">
@@ -249,7 +170,7 @@ const Home = () => {
                 <Link to="/register" className="btn btn-primary btn-large">
                   Get Started Free
                 </Link>
-                <Link to="/login" className="btn btn-outline-dark btn-large">
+                <Link to="/login" className="btn btn-primary btn-large">
                   Login
                 </Link>
               </div>

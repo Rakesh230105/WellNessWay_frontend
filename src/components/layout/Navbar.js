@@ -28,12 +28,12 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-brand">
-          <svg className="brand-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor" opacity="0.3"/>
-            <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            <circle cx="12" cy="9" r="2" fill="currentColor"/>
-          </svg>
+          {/* Logo Image */}
+          <img
+            src="/WellnessWay_logo.png"
+            alt="WellnessWay Logo"
+            className="brand-logo"
+          />
           <span className="brand-text">WellnessWay</span>
         </Link>
 
@@ -47,9 +47,13 @@ const Navbar = () => {
               <Link to="/medical-shops" className="navbar-link">Medical Shops</Link>
               <Link to="/hospitals" className="navbar-link">Hospitals</Link>
               <div className="navbar-user">
-                <div className="user-avatar">{user?.name?.charAt(0).toUpperCase()}</div>
+                <div className="user-avatar">
+                  {user?.name?.charAt(0).toUpperCase()}
+                </div>
                 <span className="user-name">{user?.name}</span>
-                <button onClick={handleLogout} className="btn-logout">Logout</button>
+                <button onClick={handleLogout} className="btn-logout">
+                  Logout
+                </button>
               </div>
             </>
           ) : (
